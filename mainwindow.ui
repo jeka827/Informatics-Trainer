@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>919</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QComboBox" name="volume_type">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>310</y>
+      <width>431</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>тип 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>тип 2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>тип 3</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>30</y>
+      <width>611</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 36pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>тренажёр по информатике</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>360</y>
+      <width>431</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 22pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Начать</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="num_system">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>150</y>
+      <width>431</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>система счисления</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="volume">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>230</y>
+      <width>431</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Вычислительные задачи объёмов</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>919</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>num_system</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>volume_type</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>523</x>
+     <y>205</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>606</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>volume</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>volume_type</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>378</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>532</x>
+     <y>362</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
