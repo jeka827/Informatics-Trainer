@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "menuwidget.h"
+#include "countsystemwidget.h"
+#include "volumewidget.h"
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +20,7 @@ public:
 
 private slots:
 
+    void start();
 private:
     Ui::MainWindow *ui;
 };

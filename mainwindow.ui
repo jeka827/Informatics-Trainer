@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>919</width>
-    <height>553</height>
+    <width>916</width>
+    <height>552</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QComboBox" name="volume_type">
+   <widget class="QComboBox" name="Type">
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>310</y>
+      <y>280</y>
       <width>431</width>
       <height>31</height>
      </rect>
@@ -46,7 +46,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>30</y>
+      <y>10</y>
       <width>611</width>
       <height>131</height>
      </rect>
@@ -58,7 +58,7 @@
      <string>тренажёр по информатике</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="Start">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -74,27 +74,33 @@
      <string>Начать</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="num_system">
+   <widget class="QRadioButton" name="SystemBtn">
     <property name="geometry">
      <rect>
       <x>210</x>
       <y>150</y>
       <width>431</width>
-      <height>61</height>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 20pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>система счисления</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="volume">
+   <widget class="QRadioButton" name="TasksBtn">
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>230</y>
+      <y>210</y>
       <width>431</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
      <string>Вычислительные задачи объёмов</string>
@@ -106,7 +112,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>919</width>
+     <width>916</width>
      <height>21</height>
     </rect>
    </property>
@@ -125,9 +131,9 @@
  <resources/>
  <connections>
   <connection>
-   <sender>num_system</sender>
+   <sender>SystemBtn</sender>
    <signal>clicked(bool)</signal>
-   <receiver>volume_type</receiver>
+   <receiver>Type</receiver>
    <slot>hide()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -136,14 +142,14 @@
     </hint>
     <hint type="destinationlabel">
      <x>606</x>
-     <y>351</y>
+     <y>321</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>volume</sender>
+   <sender>TasksBtn</sender>
    <signal>clicked(bool)</signal>
-   <receiver>volume_type</receiver>
+   <receiver>Type</receiver>
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -152,7 +158,7 @@
     </hint>
     <hint type="destinationlabel">
      <x>532</x>
-     <y>362</y>
+     <y>332</y>
     </hint>
    </hints>
   </connection>

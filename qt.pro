@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Informatics-Trainer
+TARGET = qt
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -22,17 +22,26 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-CONFIG += c++14
+CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    menuwidget.cpp \
+    countsystemwidget.cpp \
+    volumewidget.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    menuwidget.h \
+    countsystemwidget.h \
+    volumewidget.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    menu.ui \
+    tasksbtn.ui \
+    systembtn.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
