@@ -29,19 +29,21 @@ SOURCES += \
         mainwindow.cpp \
     menuwidget.cpp \
     countsystemwidget.cpp \
-    volumewidget.cpp
+    systemnumber.cpp \
+    informtasks.cpp
 
 HEADERS += \
         mainwindow.h \
     menuwidget.h \
     countsystemwidget.h \
-    volumewidget.h
+    systemnumber.h \
+    informtasks.h
 
 FORMS += \
         mainwindow.ui \
     menu.ui \
-    tasksbtn.ui \
-    systembtn.ui
+    systemnumber.ui \
+    informtasks.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -16,9 +16,9 @@ MenuWidget::~MenuWidget()
 void MenuWidget::on_Start_clicked()
 {
     if(ui->SystemBtn->isChecked()){
-        taskWidget = new VolumeWidget();
+        taskWidget = new Systemnumber();
     }
-    emit start();
+    emit start(taskWidget);
 
 }
 //GET TASKWIDGET

@@ -2,7 +2,7 @@
 #define MENU_H
 
 #include <QWidget>
-#include "volumewidget.h"
+#include "systemnumber.h"
 
 namespace Ui {
 class Menu;
@@ -19,12 +19,13 @@ public:
 
 signals:
 
-void start();
+void start(QWidget *w);
 
 private slots:
     void on_Start_clicked();
 
 private:
+
     Ui::Menu *ui;
     QWidget* taskWidget;
 };

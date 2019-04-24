@@ -20,7 +20,7 @@ public:
 
 private slots:
 
-    void start();
+    void start(QWidget *w);
 private:
     Ui::MainWindow *ui;
 };

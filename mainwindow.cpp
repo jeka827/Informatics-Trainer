@@ -7,10 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     MenuWidget* menu=new MenuWidget;
-    connect(menu, SIGNAL(start),this, SLOT(start()));
-    menu->ui
+    connect(menu, SIGNAL(start(QWidget *)),this, SLOT(start(QWidget *)));
     setCentralWidget(menu);
-    centralWidget()
 }
 
 MainWindow::~MainWindow()
@@ -18,7 +16,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::start()
+void MainWindow::start(QWidget *w)
 {
-
+    setCentralWidget(w);
 }
